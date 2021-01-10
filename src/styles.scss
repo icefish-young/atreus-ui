@@ -1,2 +1,4 @@
 $font-path: '~carbon-components/src/globals/fonts';
 @import "~carbon-components/scss/globals/scss/styles.scss";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

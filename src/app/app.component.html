@@ -2,7 +2,7 @@
 <ibm-header name="Atreus" brand="">
   <ibm-hamburger [active]="sideNavActive" (selected)="sideNavActive = !sideNavActive"></ibm-hamburger>
   <ibm-header-navigation>
-      <ibm-header-item [route]="['item']">干点啥</ibm-header-item>
+      <ibm-header-item [route]="['itemContainer']">干点啥</ibm-header-item>
       <ibm-header-item>总结</ibm-header-item>
   </ibm-header-navigation>
   <ibm-header-global>
@@ -14,7 +14,7 @@
 <!-- side nav -->
 <ibm-sidenav *ngIf="sideNavActive">
 <!-- <ibm-sidenav [expanded]="sideNavActive"> -->
-  <ibm-sidenav-item [route]="['item']">整点新东西</ibm-sidenav-item>
+  <ibm-sidenav-item [route]="['itemContainer']">整点新东西</ibm-sidenav-item>
   <ibm-sidenav-menu title="最近">
       <ibm-sidenav-item>穷查理宝典</ibm-sidenav-item>
   </ibm-sidenav-menu>
