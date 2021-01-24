@@ -1,30 +1,6 @@
 <!-- header -->
-<ibm-header name="Atreus" brand="">
-  <ibm-hamburger [active]="sideNavActive" (selected)="sideNavActive = !sideNavActive"></ibm-hamburger>
-  <ibm-header-navigation>
-      <ibm-header-item [route]="['itemContainer']">干点啥</ibm-header-item>
-      <ibm-header-item>总结</ibm-header-item>
-  </ibm-header-navigation>
-  <ibm-header-global>
-      <ibm-header-action title="search">
-          <svg ibmIconSearch size="20" ></svg>
-      </ibm-header-action>
-  </ibm-header-global>
-</ibm-header>
+<app-header></app-header>
 <!-- side nav -->
-<ibm-sidenav *ngIf="sideNavActive">
-<!-- <ibm-sidenav [expanded]="sideNavActive"> -->
-  <ibm-sidenav-item [route]="['itemContainer']">整点新东西</ibm-sidenav-item>
-  <ibm-sidenav-menu title="最近">
-      <ibm-sidenav-item>穷查理宝典</ibm-sidenav-item>
-  </ibm-sidenav-menu>
-  <ibm-sidenav-menu title="收藏">
-      <ibm-sidenav-item>穷查理宝典</ibm-sidenav-item>
-  </ibm-sidenav-menu>
-  <ibm-sidenav-menu title="投资">
-      <ibm-sidenav-item>穷查理宝典</ibm-sidenav-item>
-  </ibm-sidenav-menu>
-</ibm-sidenav>>
 <!-- item -->
 <div>
   <router-outlet></router-outlet>

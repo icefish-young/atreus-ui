@@ -1,24 +1,22 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-import { CarbonlModule } from './carbon/carbon.module';
-import { AppComponent } from './app.component';
-import { ItemContainerComponent } from './item/item-container/item-container.component';
-import { ItemComponent } from './item/item/item.component';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { MaterialModule } from './material/material.module';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ItemContainerComponent,
-    ItemComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
-    CarbonlModule,
-    BrowserAnimationsModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
