@@ -1,7 +1,13 @@
 <!-- header -->
-<app-header></app-header>
+<app-header [nav]="sideNav"></app-header>
 <!-- side nav -->
-<!-- item -->
-<div>
-  <router-outlet></router-outlet>
-</div>
+<!-- <mat-sidenav-container class="content-container"> -->
+<mat-sidenav-container>
+  <mat-sidenav #sideNav>
+    This is sidenav
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<mat-toolbar>footer</mat-toolbar>

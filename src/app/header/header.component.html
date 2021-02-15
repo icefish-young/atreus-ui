@@ -1,10 +1,11 @@
 <mat-toolbar color="primary" >
-    <button mat-icon-button aria-label="Button with menu icon">
+    <button mat-icon-button aria-label="Button with menu icon" (click)="nav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
     <span>Atreus</span>
-    <button mat-flat-button color="primary">干点啥</button>
-    <button mat-flat-button color="primary">时间都去哪儿了</button>
+    <!-- <a [routerLink]="['item-container']">干点啥</a> -->
+    <button mat-flat-button color="primary" [routerLink]="['item']">干点啥</button>
+    <button mat-flat-button color="primary" [routerLink]="['summary']">时间都去哪儿了</button>
     <!-- <span class="example-spacer"></span>
     <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
       <mat-icon>favorite</mat-icon>
